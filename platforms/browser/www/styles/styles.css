@@ -1,23 +1,117 @@
-/*
-Errno::ENOENT: No such file or directory - sass.css
+@font-face {
+  font-family: "nexa";
+  src: url("fonts/NexaRustSans-Black.otf"); }
+@font-face {
+  font-family: "raleway";
+  src: url("fonts/Raleway-Regular.ttf"); }
+body {
+  margin: 0px; }
 
-Backtrace:
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - sass.css"; }
+.infoBar {
+  background-color: #EDEDED;
+  width: 100%;
+  height: 20px;
+  position: fixed;
+  margin: 0px;
+  z-index: 99999; }
+
+.header {
+  font-family: "nexa", "Arial Black", Gadget, sans-serif;
+  font-size: 1.4em; }
+
+p {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 1.3em; }
+
+input,
+button,
+button:active {
+  box-shadow: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: rgba(1, 1, 1, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  letter-spacing: inherit; }
+
+body .dark {
+  background-color: #013738;
+  width: 100%;
+  height: 100%;
+  position: fixed; }
+
+#login {
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 105px;
+  position: static; }
+  #login .fa {
+    margin-top: -30px;
+    font-size: 1.3em;
+    line-height: 30px;
+    padding-left: 5px;
+    color: #95989A; }
+
+#loginHeader {
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+  margin-bottom: 30px; }
+  #loginHeader .header {
+    text-align: left; }
+  #loginHeader img {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    padding-right: 10px; }
+  #loginHeader .header,
+  #loginHeader img {
+    display: inline-block; }
+
+.field {
+  margin-top: 10px; }
+
+input {
+  background-color: #EDEDED;
+  width: 100%;
+  height: 30px;
+  font-size: 1.3em;
+  line-height: 29.8px;
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  padding-left: 35px; }
+
+.button {
+  width: 150px;
+  background-color: #25CED1;
+  color: white;
+  font-family: "nexa", "Arial Black", Gadget, sans-serif;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3em;
+  letter-spacing: 1px; }
+
+#login .button {
+  width: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; }
+
+/*# sourceMappingURL=styles.css.map */
