@@ -1,4 +1,4 @@
-#License.md
+#LICENSE.md
 
 My Resouce Time (MRT) is protected under the following MIT License:
 
