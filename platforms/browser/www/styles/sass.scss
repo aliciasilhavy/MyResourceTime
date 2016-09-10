@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "nexa";
+	src: url("fonts/NexaRustSans-Black.otf");
+}
+@font-face {
+	font-family: "raleway";
+	src: url("fonts/Raleway-Regular.ttf");
+}
+$dark-blue: #013738;
+$bold: "nexa",
+"Arial Black",
+Gadget,
+sans-serif;
+$sans-serif: "raleway",
+Arial,
+Helvetica,
+sans-serif;
+$padding: 10px;
+$headline-size: 1.4em;
+body {
+	margin: 0px;
+}
+.header {
+	font-family: $bold;
+	font-size: $headline-size;
+}
+body .dark {
+	background-color: $dark-blue;
+	width: 100%;
+	height: 100%;
+}
+#login {
+	background-color: white;
+	width: 250px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: $padding;
+}
+#loginHeader {
+	width: 200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	.header {
+		text-align: left;
+		width: 100px;
+	}
+	img {
+		width: 80px;
+	}
+	.header,
+	img {
+		display: inline-block;
+	}
+}
