@@ -42,6 +42,10 @@ button:active {
   color: inherit;
   letter-spacing: inherit; }
 
+a:-webkit-any-link {
+  color: inherit;
+  text-decoration: none !IMPORTANT; }
+
 body .dark {
   background-color: #013738;
   width: 100%;
@@ -71,7 +75,7 @@ body .dark {
   margin-right: auto;
   display: flex;
   justify-content: center;
-  margin-top: 65px;
+  margin-top: 25px;
   margin-bottom: 30px; }
   #loginHeader .header {
     text-align: left; }
@@ -113,5 +117,10 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px; }
+
+#other p {
+  text-align: center;
+  color: #EF6461;
+  font-size: 0.86667em; }
 
 /*# sourceMappingURL=styles.css.map */
