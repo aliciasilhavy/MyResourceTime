@@ -16,27 +16,36 @@ Arial,
 Helvetica,
 sans-serif;
 $padding: 10px;
-$headline-size: 1.4em;
 $gray: #EDEDED;
+$red: #EF6461;
+$light-blue: #25CED1;
 $status-bar-height: 20px;
 $field-height: 30px;
 $copy-font-size: 1.3em;
+$subhead-font-size: 1.4em;
+$headline-font-size: 1.6em;
 $button-width: 150px;
-$red: #EF6461;
 body {
 	margin: 0px;
 }
-.infoBar {
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+#infoBar {
 	background-color: $gray;
 	width: 100%;
 	height: $status-bar-height;
 	position: fixed;
 	margin: 0px;
+	top: 0px !IMPORTANT;
 	z-index: 99999;
 }
 .header {
 	font-family: $bold;
-	font-size: $headline-size;
+	font-size: $subhead-font-size;
 }
 p {
 	font-family: $sans-serif;
@@ -74,11 +83,11 @@ body .dark {
 #login {
 	background-color: white;
 	width: 300px;
-	height: 450px;
+	height: 550px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: $padding;
-	margin-top: 105px;
+	margin-top: 60px;
 	position: static;
 	.fa {
 		margin-top: $field-height * -1;
@@ -95,7 +104,7 @@ body .dark {
 	margin-right: auto;
 	display: flex;
 	justify-content: center;
-	margin-top: 25px;
+	margin-top: 40px;
 	margin-bottom: 30px;
 	.header {
 		text-align: left;
@@ -145,4 +154,66 @@ input {
 	text-align: center;
 	color: $red;
 	font-size: $copy-font-size / 1.5;
+}
+#title,
+#nav {
+	width: 100%;
+	background-color: $dark-blue;
+	padding: $padding;
+	font-family: $bold;
+	text-align: center;
+}
+#title {
+	top: $status-bar-height;
+	font-size: $headline-font-size;
+	color: white;
+	position: fixed;
+	padding-top: $padding * 1.5;
+	padding-bottom: $padding * 1.5;
+}
+#nav {
+	position: fixed;
+	bottom: 0px;
+	color: white;
+}
+#nav .active {
+	color: $red;
+}
+#feed {
+	background-color: white;
+	margin-top: 90px;
+}
+.post {
+	padding: $padding;
+}
+.postTitle {
+	font-family: $bold;
+	font-size: $headline-font-size;
+}
+.postUser {
+	color: $light-blue;
+	font-size: $copy-font-size;
+	font-family: $sans-serif;
+}
+.postDesc {
+	font-family: $sans-serif;
+	font-size: $copy-font-size;
+	margin-top: $padding / 2;
+}
+.postInfo {
+	width: 100%;
+	background-color: $gray;
+	text-align: center;
+	font-family: $sans-serif;
+	font-size: $copy-font-size / 1.2;
+	margin-top: $padding;
+}
+.date,
+.time,
+.location {
+	display: inline-block;
+	padding-left: $padding * 2;
+	padding-right: $padding * 2;
+	padding-top: $padding / 2;
+	padding-bottom: $padding / 2;
 }

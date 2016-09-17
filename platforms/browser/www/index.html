@@ -8,11 +8,11 @@
 	<title>My Resource Time</title>
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
-	<script src="js/index.js"></script>
 </head>
 
 <body>
-	<div class="infoBar"></div>
+	<div class="infoBar">
+	</div>
 	<div class="dark">
 		<div id="login">
 			<div id="loginHeader">
@@ -23,17 +23,18 @@
 				<div class="field">
 					<p class="label">Username</p>
 					<div class="input">
-						<input type="text">
+						<input type="text" id="txtEmail">
 						<i class="fa fa-user"></i>
 					</div>
 				</div>
 				<div class="field">
 					<p class="label">Password</p>
 					<div class="input">
-						<input type="password">
+						<input type="password" id="txtPassword">
 						<i class="fa fa-lock"></i>
 					</div>
 				</div>
+				<!--
 				<div class="field">
 					<p class="label">School Code</p>
 					<div class="input">
@@ -41,38 +42,25 @@
 						<i class="fa fa-graduation-cap"></i>
 					</div>
 				</div>
+-->
 				<div class="button">
-					<button type="submit">Login</button>
+					<button type="submit" id="btnLogin">Login</button>
+				</div>
+				<div class="button hide">
+					<button type="submit" id="btnLogout">Log Out</button>
 				</div>
 				<div id="other">
 					<p>
-						<a href="">Lost Password?</a>
+						<button type="submit" id="btnSignUp">Register</button>
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
-	<script>
-		// Initialize Firebase
-		var config = {
-			apiKey: "AIzaSyCzmfRZlO50OPPOJdzFZGzCAKJc14gDwVM",
-			authDomain: "my-resource-time.firebaseapp.com",
-			databaseURL: "https://my-resource-time.firebaseio.com",
-			storageBucket: "my-resource-time.appspot.com",
-		};
-		firebase.initializeApp(config);
-
-		var ref = new Firebase("https://docs-examples.firebaseio.com/web/saving-data/fireblog/posts");
-		// Attach an asynchronous callback to read the data at our posts reference
-		ref.on("value", function(snapshot) {
-			console.log(snapshot.val());
-		}, function(errorObject) {
-			console.log("The read failed: " + errorObject.code);
-		});
-
-	</script>
+	<script src="js/index.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </body>
 
 </html>

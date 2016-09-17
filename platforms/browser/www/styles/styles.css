@@ -7,6 +7,9 @@
 body {
   margin: 0px; }
 
+.hide {
+  display: none; }
+
 .infoBar {
   background-color: #EDEDED;
   width: 100%;
