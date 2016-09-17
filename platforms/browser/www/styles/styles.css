@@ -10,12 +10,20 @@ body {
 .hide {
   display: none; }
 
-.infoBar {
+.show {
+  display: block; }
+
+.centerContainer {
+  margin-left: auto;
+  margin-right: auto; }
+
+#infoBar {
   background-color: #EDEDED;
   width: 100%;
   height: 20px;
   position: fixed;
   margin: 0px;
+  top: 0px !IMPORTANT;
   z-index: 99999; }
 
 .header {
@@ -58,11 +66,11 @@ body .dark {
 #login {
   background-color: white;
   width: 300px;
-  height: 450px;
+  height: 550px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  margin-top: 105px;
+  margin-top: 60px;
   position: static; }
   #login .fa {
     margin-top: -30px;
@@ -78,7 +86,7 @@ body .dark {
   margin-right: auto;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-bottom: 30px; }
   #loginHeader .header {
     text-align: left; }
@@ -125,5 +133,85 @@ input {
   text-align: center;
   color: #EF6461;
   font-size: 0.86667em; }
+
+#title,
+#nav {
+  width: 100%;
+  background-color: #013738;
+  padding: 10px;
+  font-family: "nexa", "Arial Black", Gadget, sans-serif;
+  text-align: center; }
+
+#title {
+  top: 20px;
+  font-size: 1.6em;
+  color: white;
+  position: fixed;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+#nav {
+  padding: 0;
+  position: fixed;
+  bottom: 0px;
+  color: white;
+  font-size: 2.5em;
+  text-align: center; }
+  #nav i {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px; }
+  #nav .active {
+    color: #EF6461; }
+
+#feed {
+  background-color: white;
+  margin-top: 90px; }
+
+.post {
+  padding: 10px; }
+
+.postTitle {
+  font-family: "nexa", "Arial Black", Gadget, sans-serif;
+  font-size: 1.6em; }
+
+.postUser {
+  color: #25CED1;
+  font-size: 1.3em;
+  font-family: "raleway", Arial, Helvetica, sans-serif; }
+
+.postDesc {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  margin-top: 5px; }
+
+.postInfo {
+  width: 100%;
+  background-color: #EDEDED;
+  text-align: center;
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.08333em;
+  margin-top: 10px; }
+
+.date,
+.time,
+.location {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+#createPost {
+  background-color: #25CED1;
+  position: fixed;
+  bottom: 75px;
+  right: 15px;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 3.2em;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

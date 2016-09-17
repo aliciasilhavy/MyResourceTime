@@ -11,10 +11,9 @@
 </head>
 
 <body>
-	<div class="infoBar">
-	</div>
+	<div id="infoBar"></div>
 	<div class="dark">
-		<div id="login">
+		<div id="login" class="hide">
 			<div id="loginHeader">
 				<img src="styles/images/logo.png" />
 				<div class="header">My Resource Time</div>
@@ -34,33 +33,71 @@
 						<i class="fa fa-lock"></i>
 					</div>
 				</div>
-				<!--
 				<div class="field">
 					<p class="label">School Code</p>
 					<div class="input">
-						<input type="password">
+						<input type="password" id="txtSchoolCode">
 						<i class="fa fa-graduation-cap"></i>
 					</div>
 				</div>
--->
+				<div class="field">
+					<p class="label">Admin Code <a href="">(?)</a></p>
+					<div class="input">
+						<input type="password" id="txtAdminCode">
+						<i class="fa fa-lock" aria-hidden="true"></i>
+					</div>
+				</div>
 				<div class="button">
 					<button type="submit" id="btnLogin">Login</button>
-				</div>
-				<div class="button hide">
-					<button type="submit" id="btnLogout">Log Out</button>
 				</div>
 				<div id="other">
 					<p>
 						<button type="submit" id="btnSignUp">Register</button>
+						<button type="submit" id="btnLostPassword">Lost Password</button>
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div id="feed">
+		<div id="title">Recent</div>
+		<div id="nav">
+			<div class="centerContainer">
+				<i class="fa fa-comments-o active" aria-hidden="true"></i>
+				<i class="fa fa-calendar" aria-hidden="true"></i>
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<i class="fa fa-user" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="post WHS">
+			<div class="postTitle">APCS Meeting</div>
+			<div class="postUser">@KPodell</div>
+			<div class="postDesc">Meeting tonight in the library. Bring your laptops.</div>
+			<div class="postInfo">
+				<div class="date">5/5/5</div>/
+				<div class="time">3:20</div>/
+				<div class="location">Room 1307</div>
+			</div>
+		</div>
+		<div class="post CHS">
+			<div class="postTitle">APCS Meeting</div>
+			<div class="postUser">@KPodell</div>
+			<div class="postDesc">Meeting tonight in the library. Bring your laptops.</div>
+			<div class="postInfo">
+				<div class="date">5/5/5</div>/
+				<div class="time">3:20</div>/
+				<div class="location">Room 1307</div>
+			</div>
+		</div>
+		<div id="createPost" class="hide"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+		<div class="button" id="btnLogoutContainer">
+			<button type="submit" id="btnLogout">Logout</button>
+		</div>
+	</div>
 	<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
-	<script src="js/index.js"></script>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>

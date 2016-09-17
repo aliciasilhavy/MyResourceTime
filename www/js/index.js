@@ -1,5 +1,3 @@
-//TODO: FIGURE OUT ADMIM AUTH
-//TODO: CONFIGURE SCHOOL CODE
 //TODO: FIGURE OUT FOLLOWING
 //TODO: FIGURE OUT LIVE FEED
 //TODO: FIGURE OUT PROFILE INFO
@@ -42,12 +40,18 @@
 	btnSignUp.addEventListener('click', e => {
 		//Get email and password fields
 		//TODO: check for real email
+		const schoolCode = txtSchoolCode.value;
 		const email = txtEmail.value;
 		const pass = txtPassword.value;
 		const auth = firebase.auth();
 		//Sign up
-		const promise = auth.createUserWithEmailAndPassword(email, pass);
-		promise.catch(e => console.log(e.message));
+		if (schoolCode !== '') {
+			checkSchoolCode();
+			const promise = auth.createUserWithEmailAndPassword(email, pass);
+			promise.catch(e => console.log(e.message));
+		} else {
+			console.log('Did not create account');
+		}
 	});
 
 	btnLogout.addEventListener('click', e => {
@@ -78,11 +82,12 @@
 
 	function checkSchoolCode() {
 		const schoolCode = txtSchoolCode.value;
-		if (schoolCode == "3372") {
+		if (schoolCode == "0000") {
 			showWHS();
 			checkForAdmin();
 		} else {
-			console.log("Error line 93");
+			console.log("incorrect school code");
+			firebase.auth().signOut();
 		}
 	}
 
@@ -91,6 +96,10 @@
 		const adminCode = txtAdminCode.value;
 		if (adminCode == "thisisanadmin") {
 			showCreatePost();
+		} else if (adminCode == '') {
+			console.log("no code entered")
+		} else {
+			console.log("Incorect code!");
 		}
 	}
 

@@ -13,6 +13,10 @@ body {
 .show {
   display: block; }
 
+.centerContainer {
+  margin-left: auto;
+  margin-right: auto; }
+
 #infoBar {
   background-color: #EDEDED;
   width: 100%;
@@ -147,12 +151,19 @@ input {
   padding-bottom: 15px; }
 
 #nav {
+  padding: 0;
   position: fixed;
   bottom: 0px;
-  color: white; }
-
-#nav .active {
-  color: #EF6461; }
+  color: white;
+  font-size: 2.5em;
+  text-align: center; }
+  #nav i {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px; }
+  #nav .active {
+    color: #EF6461; }
 
 #feed {
   background-color: white;
@@ -191,5 +202,16 @@ input {
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px; }
+
+#createPost {
+  background-color: #25CED1;
+  position: fixed;
+  bottom: 75px;
+  right: 15px;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 3.2em;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
