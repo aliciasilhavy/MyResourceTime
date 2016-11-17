@@ -1,0 +1,14 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] CLI Version:  3.0.8
+[debug] Platform:     darwin
+[debug] Node Version: v6.5.0
+[debug] Time:         Sun Oct 02 2016 14:02:00 GMT-0400 (EDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/aliciasilhavy/Desktop/files/work/works/websites/MyResourceTime
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000
